@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agent Uploader</title><meta name="description" content="A private, single-user tool that uploads the owner's own videos to his own YouTube channels.">
+<link rel="stylesheet" href="style.css"></head><body><main>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></nav>
+<h1>Agent Uploader</h1><p class="sub">A private publishing tool for one creator's own YouTube channels.</p>
+<h2>What it does</h2>
+<p>Agent Uploader is a small, self-hosted script used by a single independent creator to publish the animated educational
+videos he produces for his own channels (for example, <em>Wild What Ifs</em>). It is not offered to the public and has no other users.</p>
+<ul>
+<li>Uploads a finished video file with its title, description, tags and thumbnail (<code>videos.insert</code>, <code>thumbnails.set</code>).</li>
+<li>Every upload starts as <strong>private</strong>. The creator reviews each video and personally approves it before it is made public (<code>videos.update</code>).</li>
+<li>Reads only the creator's own channel identity (<code>channels.list</code>, <code>mine=true</code>) to confirm which channel is connected.</li>
+</ul>
+<h2>What it does not do</h2>
+<ul><li>No access to other users' channels or data.</li><li>No analytics collection, scraping, comments, or advertising.</li>
+<li>No sale or sharing of any data.</li></ul>
+<h2>How access works</h2>
+<p>The creator signs in once with Google OAuth and grants access to his own channel. The resulting token is stored encrypted-at-rest on his
+own private server and can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<footer>Questions: open an issue at <a href="https://github.com/CryptoDJ7/agent-uploader/issues">github.com/CryptoDJ7/agent-uploader</a>.</footer>
+</main></body></html>
